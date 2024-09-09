@@ -25,7 +25,7 @@ const TechStackCarousel: React.FC = () => {
     dots: false,
     infinite: true,
     speed: 5000,
-    slidesToShow: 12,
+    slidesToShow: 15,
     slidesToScroll: 1,
     autoplay: true,
     autoplaySpeed: 0,
