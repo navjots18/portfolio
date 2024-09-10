@@ -18,6 +18,8 @@ const techStacks = [
   { name: 'Spring', icon: 'simple-icons:spring' },
   { name: 'Kubernetes', icon: 'simple-icons:kubernetes' },
   { name: 'Tailwind', icon: 'simple-icons:tailwindcss' },
+  { name: 'C#', icon: 'simple-icons:csharp' },
+  { name: '.NET', icon: 'simple-icons:dotnet' },
 ];
 
 const TechStackCarousel: React.FC = () => {

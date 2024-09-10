@@ -4,18 +4,19 @@ import  TechStackCarousel from './components/TechStackCarousel';
 import SocialLinks from './components/SocialLinks';
 import AboutMe from './components/AboutMe';
 import ExperienceTree from './components/ExperienceTree';
+import ProfileHeader from './components/ProfileHeader';
 
 const App: React.FC = () => {
   return (
-    <div className="grid grid-cols-10 min-h-screen bg-gradient-to-br from-white via-gray-100 to-white overrflow-x-hidden">
-      <div className="col-span-9 flex flex-col items-center sm:px-8 md:px-16 ml-3 mr-3">
-        <h1 className="text-5xl font-bold text-gray-800 mb-2 p-6 m-4 bg-white rounded-lg shadow-md font-playfair animate-slide-up">
-          Navjot Singh
-        </h1>
-        <div className="animate-slide-up" style={{animationDelay: '0.2s'}}>
-          <SocialLinks />
+    <div className="grid grid-cols-8 min-h-screen w-screen bg-gradient-to-br from-white via-gray-100 to-white overflow-x-hidden">
+      <div className="col-span-7 flex flex-col items-center justify-cente mr-2">
+        <div className="text-center">
+          <ProfileHeader name="Navjot Singh"/>
+          <div className="flex justify-center items-center animate-slide-up" style={{animationDelay: '0.2s'}}>
+              <SocialLinks />
+          </div>
+          <AboutMe />
         </div>
-        <AboutMe />
         <ExperienceTree />
       </div>
       <div className="col-span-1">

@@ -12,19 +12,19 @@ const experiences: Experience[] = [
     company: "Hubspot",
     role: "SWE intern",
     period: "Jun 2024 - Present",
-    description: "Worked as an intern on the HubSpot CMS team, contributing to the development of HubSpot's content management system. Collaborated with cross-functional teams to deliver high-quality features and enhancements."
+    description: "Collaborated with the Backend Delights Insight team to enhance customer metrics and system performance. Developed and deployed a unified usage metrics service, reducing data processing latency by 40% through improved caching and optimized Kafka job performance. Engineered systems for efficient data synchronization, managing high transaction volumes and ensuring real-time data availability."
   },
   {
     company: "Practice By Numbers",
     role: "Software Engineer",
     period: "Feb 2022 - Jul 2023",
-    description: "Developed and maintained multiple web applications using React and Node.js.sadsadsada"
+    description: "Worked with the backend team to develop key features for a standalone Patient Portal service, including chat enhancements and file-sharing with Amazon S3, improving patient data management and authentication functionalities."
   },
   {
     company: "Innovaccer",
     role: "Software Developent Engineer - 1",
     period: "Feb 2022- Feb 2023",
-    description: "Assisted in the development of company's main product and learned various technologies."
+    description: "Collaborated with the backend team to develop key features and a standalone Patient Portal service, improving user experience with enhanced chat functionality and file-sharing. Also built the Patient Portal for managing patient data and developed the authentication system, including sign-up, login, and password recovery."
   }
  
   
@@ -33,7 +33,7 @@ const experiences: Experience[] = [
 const ExperienceTree: React.FC = () => {
     return (
       <div className="mt-8 p-2 bg-white rounded-lg shadow-md max-w-2xl animate-slide-up">
-        <h2 className="text-2xl font-bold mb-6">My Experience</h2>
+        <h2 className="text-2xl font-bold mb-6 font-playfair">My Experience</h2>
         <div className="relative">
           {experiences.map((exp, index) => (
             <div key={index} className="mb-8 flex">
