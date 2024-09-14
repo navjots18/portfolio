@@ -1,4 +1,4 @@
-import React from 'react';
+import React , { useState, useEffect } from 'react';
 import Slider from 'react-slick';
 import { Icon } from '@iconify/react';
 import "slick-carousel/slick/slick.css"; 
@@ -23,11 +23,27 @@ const techStacks = [
 ];
 
 const TechStackCarousel: React.FC = () => {
+  
+  const [slidesToShow, setSlidesToShow] = useState(18);
+
+  useEffect(() => {
+    const handleResize = () => {
+      setSlidesToShow(window.innerWidth > 768 ? 13 : 18);
+    };
+
+    handleResize(); // Set initial value
+    window.addEventListener('resize', handleResize);
+
+    return () => {
+      window.removeEventListener('resize', handleResize);
+    };
+  }, []);
+  
   const settings = {
     dots: false,
     infinite: true,
     speed: 5000,
-    slidesToShow: 15,
+    slidesToShow: slidesToShow,
     slidesToScroll: 1,
     autoplay: true,
     autoplaySpeed: 0,

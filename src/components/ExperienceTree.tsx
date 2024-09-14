@@ -32,7 +32,7 @@ const experiences: Experience[] = [
 ];
 const ExperienceTree: React.FC = () => {
     return (
-      <div className="mt-8 p-2 bg-white rounded-lg shadow-md max-w-2xl animate-slide-up">
+      <div className="ml-2 mt-8 p-2 bg-white rounded-lg shadow-md max-w-2xl animate-slide-up">
         <h2 className="text-2xl font-bold mb-6 font-playfair">My Experience</h2>
         <div className="relative">
           {experiences.map((exp, index) => (
